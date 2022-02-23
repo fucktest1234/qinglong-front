@@ -11,7 +11,7 @@ export default defineConfig({
   favicon: '/images/g5.ico',
   proxy: {
     '/api': {
-      target: 'http://127.0.0.1:5700',
+      target: 'http://127.0.0.1:5700', // 修改成你线上5700地址， 后端逻辑改/ql/back目录， 然后yarn build-back , pm2 restart 0 1 即可生效
       changeOrigin: true,
     },
   },
